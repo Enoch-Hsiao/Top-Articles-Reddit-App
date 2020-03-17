@@ -1,0 +1,176 @@
+body{
+    background: black;
+    color: #BBE1FA;
+    align-items: center;
+}
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+ }
+#inputField {
+    font-size: 1em;
+  }
+
+.row {
+  display: flex;
+  text-align: center;
+}
+
+.column {
+  flex: 150%;
+  position: relative;
+  flex: right;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.icon {
+  width: 60%;
+}
+.searchBar {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.searchBar > input {
+    width: 45%;
+    height: 40px;
+    color: #222222;
+}
+
+.searchBar > button {
+    border: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: white;
+    background: #72BCD4;
+}
+
+.searchBar > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+  
+}
+.searchBar > input::-moz-placeholder { /* Firefox 19+ */
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.searchBar > input:-ms-input-placeholder { /* IE 10+ */
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.searchBar > input:-moz-placeholder { /* Firefox 18- */
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  a:hover {
+    color: #3282b8;
+  }
+
+  .title {
+      margin: 10px;
+      text-align: left;
+  }
+  .link {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #BEEBE9;
+  }
+.box {
+    align-items: center;
+    text-align: center;
+    color: #bbe1fa;
+    border: 2px solid #404040;
+    border-radius: 25px;
+    width: 768px;
+    margin: auto;
+    background-color: #222222;
+}
+
+.media  {
+    width: 50%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .box {
+      width: 98%;
+    }
+    .searchBar {
+      width: 90%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      font-family: sans-serif;
+      font-size: 25px;
+  }
+  .row {
+    display: flex;
+    text-align: center;
+  }
+  
+  .column {
+    position: relative;
+    flex: right;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .icon {
+    width: 100%;
+  }
+  .searchBar > input {
+      width: 40%;
+      height: 40px;
+      color: #222222;
+  }
+  
+  .searchBar > button {
+      border: none;
+      font-family: sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: white;
+      background: #72BCD4;
+  }
+    .searchBar > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: left;
+      
+    }
+    .searchBar > input::-moz-placeholder { /* Firefox 19+ */
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: left;
+    }
+    .searchBar > input:-ms-input-placeholder { /* IE 10+ */
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: left;
+    }
+    .searchBar > input:-moz-placeholder { /* Firefox 18- */
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
