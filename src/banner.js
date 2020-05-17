@@ -4,7 +4,7 @@ function Banner(props){
     const divStyle = {
         backgroundColor: "#191919",
         width: "100%",
-        height: "200px",
+        height: "240px",
         overflow: "hidden",
         font: "verdana",
         color: "#E8E8E8",
@@ -25,7 +25,7 @@ function Banner(props){
     }
     const iconStyle = {
         borderRadius: "50%",
-        width: "75px",
+        width: "100px",
         margin: "auto",
         padding: "0px",
         display: "block",

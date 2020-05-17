@@ -4,6 +4,13 @@ import Icon from "./icon.js"
 import Articles from "./articles.js"
 import Banner from "./banner.js"
 import Footer from "./footer.js"
+import popularIcon from "./icons/popular.png"
+import newsIcon from "./icons/news.png"
+import scienceIcon from "./icons/science.png"
+import musicIcon from "./icons/music.png"
+import sportsIcon from "./icons/sports.png"
+import gamingIcon from "./icons/gaming.png"
+import picsIcon from "./icons/photos.png"
 
 function App() {
 
@@ -17,13 +24,13 @@ function App() {
   const [placeHolderText, setPlaceHolderText] = useState("Enter Subreddit");
   const [placeHolderNum, setPlaceHolderNum] = useState("# of Articles (1-50)");
 
-  const icons = [{key: 1, name: "popular", iconPic: "https://external-preview.redd.it/QJRqGgkUjhGSdu3vfpckrvg1UKzZOqX2BbglcLhjS70.png?auto=webp&s=c681ae9c9b5021d81b6c4e3a2830f09eff2368b5"},
-  {key: 2, name: "worldnews", iconPic: "https://cdn0.iconfinder.com/data/icons/academics-white-with-multicolor-circle-background/2048/News-512.png"},
-  {key: 3, name: "science", iconPic: "https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2/128/atom-circle-blue-512.png"},
-  {key: 4, name: "music", iconPic: "https://cdn.pixabay.com/photo/2019/08/11/18/27/icon-4399630_960_720.png"},
-  {key: 5, name: "sports", iconPic: "https://cdn0.iconfinder.com/data/icons/sports-white-with-multicolor-circle-background/2048/Exercise_I-512.png"},
-  {key: 6, name: "gaming", iconPic: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png"},
-  {key: 7, name: "pics", iconPic: "https://cdn0.iconfinder.com/data/icons/basic-11/97/21-512.png"}];
+  const icons = [{key: 1, name: "popular", iconPic: popularIcon},
+  {key: 2, name: "worldnews", iconPic: newsIcon},
+  {key: 3, name: "science", iconPic: scienceIcon},
+  {key: 4, name: "music", iconPic: musicIcon},
+  {key: 5, name: "sports", iconPic: sportsIcon},
+  {key: 6, name: "gaming", iconPic: gamingIcon},
+  {key: 7, name: "pics", iconPic: picsIcon}];
 
   let [searchBarText, setText] = useState("");
   let getDataArticles = function get(){ fetch(linkArticles)
@@ -60,12 +67,14 @@ function App() {
         let info = null;
         let dataFound = data.message !== "Not Found";
         if(dataFound){
+          let backgroundImage = decodeHtml(data.data.banner_background_image);
+          let icon = decodeHtml(data.data.community_icon);
           info = {  
                     data: true,
                     name: data.data.display_name,
                     title: data.data.title,
-                    background: data.data.banner_background_image,
-                    icon: data.data.community_icon,
+                    background: backgroundImage,
+                    icon: icon,
                     icon2: data.data.icon_img,
                     subscribers: data.data.subscribers,
                     description: data.data.public_description,
@@ -143,12 +152,19 @@ function App() {
               media = {data.media}
               is_video = {data.is_video}
     />);
+
   let subredditIcons = icons.map(data => 
   <Icon key = {data.key}
         name = {data.name}
         link = {data.iconPic}
         function = {imageClick}
   />);
+
+  function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
 
   return (
     <div className="App">
