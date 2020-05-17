@@ -8,6 +8,7 @@ I built this Reddit clone website to learn more about Node.js and React.js, inte
 * User can search for subreddit name of their choice in a text input field
 * User can chooose how many top articles they would like to see (up to 50)
 * Progressive web app capabilities
+* Button icons to popular subreddits
 
 ### Prerequisites
 
