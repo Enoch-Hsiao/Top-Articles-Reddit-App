@@ -29,3 +29,7 @@ Download npm and node.js here: https://www.npmjs.com/get-npm
     $ npm start
     ```
 2. Browse to `http://localhost:3000/`
+
+## Screenshot
+
+<img src="https://i.imgur.com/e2QgwmX.png" width="100%" border="0">
