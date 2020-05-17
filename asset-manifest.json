@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/top-articles-reddit-app/static/css/main.eb6f4366.chunk.css",
+    "main.js": "/top-articles-reddit-app/static/js/main.751cff0e.chunk.js",
+    "main.js.map": "/top-articles-reddit-app/static/js/main.751cff0e.chunk.js.map",
+    "runtime-main.js": "/top-articles-reddit-app/static/js/runtime-main.b29a992c.js",
+    "runtime-main.js.map": "/top-articles-reddit-app/static/js/runtime-main.b29a992c.js.map",
+    "static/js/2.875b893f.chunk.js": "/top-articles-reddit-app/static/js/2.875b893f.chunk.js",
+    "static/js/2.875b893f.chunk.js.map": "/top-articles-reddit-app/static/js/2.875b893f.chunk.js.map",
+    "index.html": "/top-articles-reddit-app/index.html",
+    "precache-manifest.fdbf2934dba1164b5a1ecaad48bf4bc1.js": "/top-articles-reddit-app/precache-manifest.fdbf2934dba1164b5a1ecaad48bf4bc1.js",
+    "service-worker.js": "/top-articles-reddit-app/service-worker.js",
+    "static/css/main.eb6f4366.chunk.css.map": "/top-articles-reddit-app/static/css/main.eb6f4366.chunk.css.map",
+    "static/js/2.875b893f.chunk.js.LICENSE.txt": "/top-articles-reddit-app/static/js/2.875b893f.chunk.js.LICENSE.txt",
+    "static/media/gaming.png": "/top-articles-reddit-app/static/media/gaming.6e9063b0.png",
+    "static/media/music.png": "/top-articles-reddit-app/static/media/music.b6b39001.png",
+    "static/media/news.png": "/top-articles-reddit-app/static/media/news.5adc2985.png",
+    "static/media/photos.png": "/top-articles-reddit-app/static/media/photos.a52d3fed.png",
+    "static/media/popular.png": "/top-articles-reddit-app/static/media/popular.2faa8b64.png",
+    "static/media/science.png": "/top-articles-reddit-app/static/media/science.f7237ab8.png",
+    "static/media/sports.png": "/top-articles-reddit-app/static/media/sports.79e7975c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b29a992c.js",
+    "static/js/2.875b893f.chunk.js",
+    "static/css/main.eb6f4366.chunk.css",
+    "static/js/main.751cff0e.chunk.js"
+  ]
+}
