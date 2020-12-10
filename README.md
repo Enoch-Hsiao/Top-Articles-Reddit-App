@@ -1,5 +1,5 @@
 Site deployed on GitHub Pages: 
-https://enoch-hsiao.github.io/top-articles-reddit-app/
+https://enoch-hsiao.github.io/Top-Articles-Reddit-App/
 
 # Reddit web application
 I built this Reddit clone website to learn more about Node.js and React.js, integrating with Reddit’s API to show the top articles in a given subreddit. 
