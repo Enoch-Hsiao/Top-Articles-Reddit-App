@@ -1,6 +1,6 @@
 {
-  "homepage": "http://enoch-hsiao.github.io/Top-Articles-Reddit-App",
-  "name": "top-articles-reddit-app",
+  "homepage": "https://topsubredditposts.web.app/",
+  "name": "top-subreddit-posts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
