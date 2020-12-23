@@ -1,4 +1,4 @@
-Site deployed on GitHub Pages: 
+Site deployed on Firebase:
 https://topsubredditposts.web.app
 
 # Reddit web application
